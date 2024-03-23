@@ -2,19 +2,29 @@ import { Card, AreaChart, Title, Text } from '@tremor/react'
 
 const data = [
   {
+    Month: 'Nov 23',
+    Surveys: 2890,
+    Payments: 2400,
+  },
+  {
+    Month: 'Dec 23',
+    Surveys: 1890,
+    Payments: 1398,
+  },
+  {
     Month: 'Jan 24',
-    Sales: 2890,
-    Profit: 2400,
+    Surveys: 2890,
+    Payments: 2400,
   },
   {
     Month: 'Feb 24',
-    Sales: 1890,
-    Profit: 1398,
+    Surveys: 1890,
+    Payments: 1398,
   },
   {
     Month: 'March 24',
-    Sales: 3890,
-    Profit: 2980,
+    Surveys: 3890,
+    Payments: 2980,
   },
 ]
 
@@ -30,7 +40,7 @@ export default function Chart() {
         index='Month'
         colors={['indigo', 'fuchsia']}
         valueFormatter={(number) =>
-          `$ ${Intl.NumberFormat('us').format(number).toString()}`
+          `${Intl.NumberFormat('us').format(number).toString()}`
         }
         yAxisWidth={60}
       />

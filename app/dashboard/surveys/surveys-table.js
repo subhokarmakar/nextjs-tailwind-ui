@@ -13,20 +13,29 @@ export default function SurveysTable({ surveys }) {
     <Table>
       <TableHead>
         <TableRow>
-          <TableHeaderCell>Name</TableHeaderCell>
-          <TableHeaderCell>Username</TableHeaderCell>
-          <TableHeaderCell>Email</TableHeaderCell>
+          <TableHeaderCell>Survey Id</TableHeaderCell>
+          <TableHeaderCell>Title</TableHeaderCell>
+          <TableHeaderCell>Received On</TableHeaderCell>
+          <TableHeaderCell>Status</TableHeaderCell>
+          <TableHeaderCell>Action</TableHeaderCell>
         </TableRow>
       </TableHead>
+
       <TableBody>
         {surveys.map((survey) => (
           <TableRow key={survey?.id}>
-            <TableCell>{survey?.name}</TableCell>
+            <TableCell>{survey?.id}</TableCell>
             <TableCell>
-              <Text>{survey?.username}</Text>
+              <Text>{survey?.title}</Text>
             </TableCell>
             <TableCell>
-              <Text>{survey?.email}</Text>
+              <Text>{survey?.receivedOn}</Text>
+            </TableCell>
+            <TableCell>
+              <Text>{survey?.status}</Text>
+            </TableCell>
+            <TableCell>
+              <Text></Text>
             </TableCell>
           </TableRow>
         ))}

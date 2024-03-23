@@ -6,8 +6,8 @@ const Surveys = () => {
   return (
     <main className='p-4 md:p-10 mx-auto max-w-7xl'>
       <Title>Surveys</Title>
-      <Text>A list of surveys retrieved from a Postgres database.</Text>
-      <Search />
+      <Text>A list of surveys received.</Text>
+      <Search searchPlaceholder={'Survey Name'} />
       <Card className='mt-6'>
         <SurveysTable surveys={[]} />
       </Card>

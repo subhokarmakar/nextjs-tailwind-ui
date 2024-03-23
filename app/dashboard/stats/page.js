@@ -1,3 +1,5 @@
+'use client'
+
 import Chart from '../../ui/chart'
 import { Card, Metric, Text, Title, BarList, Flex, Grid } from '@tremor/react'
 
@@ -5,8 +7,8 @@ const surveys = [
   { name: 'Total Received', value: 1230 },
   { name: 'Completed', value: 751 },
   { name: 'In-Progress', value: 471 },
-  { name: 'Cancelled', value: 280 },
   { name: 'Pending', value: 78 },
+  { name: 'Cancelled', value: 280 },
 ]
 
 const payments = [
